@@ -1,0 +1,12 @@
+{
+  "user-id" : "1a2b",
+  "business-objects" : {
+    "cluster" : "foo",
+    "cluster/reseller" : "bar",
+    "cluster/reseller/customer" : "baz",
+    "cluster/reseller/customer/domain" : "fizz",
+    "cluster/reseller/customer/domain/project" : "buzz",
+    "cluster/reseller/customer/domain/project/builds": "kjdi93ndfur4ncfur4ndj"
+  },
+  "explain" : "true"
+}

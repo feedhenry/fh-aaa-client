@@ -1,0 +1,37 @@
+{
+  "name": "fh-aaa-client",
+  "description": "FeedHenry Authentication, Authorization, and Accounting (AAA) Client",
+  "version": "0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:feedhenry/fh-aaa-client.git"
+  },
+  "author": "FeedHenry",
+  "main": "./fh-aaa-client.js",
+  "preferGlobal": true,
+  "private": false,
+  "engines": {
+    "node": ">4"
+  },
+  "scripts": {
+    "test": "grunt eslint fh-test",
+    "version": "sed -i.bak \"s/sonar.projectVersion=.*/sonar.projectVersion=${npm_package_version}/\" sonar-project.properties && rm sonar-project.properties.bak && git add sonar-project.properties"
+  },
+  "dependencies": {
+    "fh-logger": "0.5.0",
+    "request": "2.79.0",
+    "underscore": "1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "latest",
+    "grunt-fh-build": "^1.0.1",
+    "grunt-shell": "1.2.1",
+    "istanbul": "^0.4.3",
+    "load-grunt-tasks": "^3.5.0",
+    "nock": "0.15.0",
+    "turbo-test-runner": "*"
+  },
+  "license": "Apache-2.0"
+}
