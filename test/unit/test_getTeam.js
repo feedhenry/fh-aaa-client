@@ -1,5 +1,4 @@
-var assert = require('assert');
-exports.it_should_test_can_access = function(done) {
+module.exports = function(assert) {
   var config = require('../fixtures/config'),
     aaaClient = require('../../fh-aaa-client.js')(config);
   aaaClient.getTeam({ id : '1a2b' }, function(err, aaaRes) {
@@ -8,6 +7,6 @@ exports.it_should_test_can_access = function(done) {
     assert.ok(aaaRes.name);
     assert.ok(aaaRes.id);
 
-    done();
+    assert.end();
   });
 };
