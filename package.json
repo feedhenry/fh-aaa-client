@@ -31,7 +31,8 @@
     "istanbul": "^0.4.3",
     "load-grunt-tasks": "^3.5.0",
     "nock": "0.15.0",
-    "turbo-test-runner": "*"
+    "tape": "4.8.0",
+    "tape-catch": "^1.0.6"    
   },
   "license": "Apache-2.0"
 }

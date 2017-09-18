@@ -9,8 +9,7 @@ fhBuildNode {
     }
 
     stage('Lint') {
-        print 'Lint task is broken see https://issues.jboss.org/browse/FH-3611'
-        //sh 'grunt eslint'
+        sh 'grunt eslint'
     }
 
     stage('Unit Tests') {

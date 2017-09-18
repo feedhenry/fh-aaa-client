@@ -18,8 +18,8 @@ module.exports = function(grunt) {
         logConcurrentOutput: true
       }
     },
-    _test_runner: 'turbo',
-    _unit_args: '--setUp ./test/index.js --tearDown ./test/index.js ./test/unit',
+    _test_runner: 'node',
+    _unit_args: './test/index.js',
     unit: '<%= _test_runner %> <%= _unit_args %>',
     unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>'
   });

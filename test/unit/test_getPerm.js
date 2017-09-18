@@ -1,5 +1,4 @@
-var assert = require('assert');
-exports.it_should_test_resolve_perm = function(done) {
+module.exports = function(assert) {
   var config = require('../fixtures/config'),
     aaaClient = require('../../fh-aaa-client.js')(config);
   aaaClient.getPerm({
@@ -9,6 +8,6 @@ exports.it_should_test_resolve_perm = function(done) {
     assert.ok(!err);
     assert.ok(aaaRes);
     assert.ok(aaaRes.a);
-    done();
+    assert.end();
   });
 };
