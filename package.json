@@ -1,7 +1,7 @@
 {
   "name": "fh-aaa-client",
   "description": "FeedHenry Authentication, Authorization, and Accounting (AAA) Client",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:feedhenry/fh-aaa-client.git"
