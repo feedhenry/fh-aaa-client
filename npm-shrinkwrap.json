@@ -1,6 +1,6 @@
 {
   "name": "fh-aaa-client",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "dependencies": {
     "ajv": {
       "version": "5.5.2",
