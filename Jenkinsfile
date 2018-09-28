@@ -7,7 +7,7 @@ stage('Trust') {
     enforceTrustedApproval()
 }
 
-fhBuildNode {
+fhBuildNode([labels: ['nodejs6']]) {
     stage('Install Dependencies') {
         npmInstall {}
     }
